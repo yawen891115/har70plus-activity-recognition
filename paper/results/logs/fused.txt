@@ -1,0 +1,98 @@
+Fold 1 Evaluation:
+Accuracy: 0.9419012214551248
+Precision: 0.851758153498267
+Recall: 0.6288980942733168
+F1-score: 0.6691789623134135
+
+Fold 2 Evaluation:
+Accuracy: 0.942370331032041
+Precision: 0.8443468868841741
+Recall: 0.6331449798480062
+F1-score: 0.6741541237006451
+
+Fold 3 Evaluation:
+Accuracy: 0.9421888829881395
+Precision: 0.849652279269179
+Recall: 0.6329410127494758
+F1-score: 0.6740992776838647
+
+Fold 4 Evaluation:
+Accuracy: 0.9432817458034423
+Precision: 0.8498921691155209
+Recall: 0.6393928254631002
+F1-score: 0.6824170830007645
+
+Fold 5 Evaluation:
+Accuracy: 0.941989475966879
+Precision: 0.8540659834025407
+Recall: 0.6370726953090983
+F1-score: 0.6803849204857209
+
+Fold 6 Evaluation:
+Accuracy: 0.9424895666913023
+Precision: 0.8414344527670833
+Recall: 0.6375182845177795
+F1-score: 0.6800852705929629
+
+Fold 7 Evaluation:
+Accuracy: 0.9427241225178019
+Precision: 0.8424791568156317
+Recall: 0.6322408054800832
+F1-score: 0.6735301982885286
+
+Fold 8 Evaluation:
+Accuracy: 0.9426179085586324
+Precision: 0.8480147269557224
+Recall: 0.6417920045258325
+F1-score: 0.6858988335691701
+
+Fold 9 Evaluation:
+Accuracy: 0.9427860806606508
+Precision: 0.8266948886412175
+Recall: 0.6291787489418673
+F1-score: 0.66843091236759
+
+Fold 10 Evaluation:
+Accuracy: 0.9433968109258759
+Precision: 0.8400055362631399
+Recall: 0.6371509315762545
+F1-score: 0.6792623451448059
+
+Overall Evaluation:
+Accuracy: 0.942574614100858
+Precision: 0.8447585590344915
+Recall: 0.6349059637386194
+F1-score: 0.676805406489472
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.93      0.97      0.95   1079312
+           3       0.52      0.19      0.28     66058
+           4       0.79      0.25      0.38      4560
+           5       0.76      0.13      0.22      4978
+           6       0.92      0.90      0.91    418051
+           7       1.00      1.00      1.00    483452
+           8       1.00      1.00      1.00    203182
+
+    accuracy                           0.94   2259593
+   macro avg       0.84      0.63      0.68   2259593
+weighted avg       0.93      0.94      0.94   2259593
+
+Per-label Accuracy:
+Label 1: 0.97
+Label 3: 0.19
+Label 4: 0.25
+Label 5: 0.13
+Label 6: 0.90
+Label 7: 1.00
+Label 8: 1.00
+
+Confusion Matrix:
+[[1051160    7071     184     142   20620     129       6]
+ [  41417   12562      35      15   12023       3       3]
+ [   3183      86    1122      36     125       8       0]
+ [   4057      97      50     653     121       0       0]
+ [  35369    4321      16      13  378314      16       2]
+ [    314       2      11       2       5  483072      46]
+ [     42       2       1       1       2     182  202952]]

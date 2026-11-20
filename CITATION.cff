@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use the study or its original experiments, please cite the conference paper below."
+title: "HAR70+ activity recognition: study code and deployment experiments"
+authors:
+  - family-names: Zheng
+    given-names: Yawen
+  - family-names: Wei
+    given-names: Junping
+preferred-citation:
+  type: conference-paper
+  title: "Tri-axial Accelerometer Data-driven Senior Activity Recognition: Multi-class Machine Learning Approaches"
+  authors:
+    - family-names: Zheng
+      given-names: Yawen
+    - family-names: Wei
+      given-names: Junping
+  collection-title: "2024 5th International Conference on Intelligent Design (ICID)"
+  year: 2024
+  start: 487
+  end: 492
+  doi: 10.1109/ICID64166.2024.11024862

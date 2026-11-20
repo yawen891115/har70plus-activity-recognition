@@ -1,0 +1,418 @@
+{
+  "experiment": "Post-publication Random Forest distillation",
+  "runtime": {
+    "python": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.0",
+      "joblib": "1.5.3",
+      "onnx": "1.18.0",
+      "onnxruntime": "1.22.1"
+    }
+  },
+  "seed": 42,
+  "train_limit_per_subject": 0,
+  "test_limit_per_subject": 0,
+  "test_subjects": [
+    504,
+    508,
+    512,
+    516
+  ],
+  "recordings": [
+    {
+      "subject": 501,
+      "split": "train",
+      "rows_read": 103860,
+      "rows_used": 103856,
+      "sha256": "7970184db1739184200e5a1d69edcaeb6e479ef00fecbc294860309419178655"
+    },
+    {
+      "subject": 502,
+      "split": "train",
+      "rows_read": 131367,
+      "rows_used": 131363,
+      "sha256": "132960390677a312afd7eba915754e3b3eac8878ca50594c4cc1456bc5e7c106"
+    },
+    {
+      "subject": 503,
+      "split": "train",
+      "rows_read": 116413,
+      "rows_used": 116409,
+      "sha256": "9ba0a9274cf696475621f0e686479e21aba3414474b0c75c0da7b687273c500f"
+    },
+    {
+      "subject": 504,
+      "split": "test",
+      "rows_read": 150758,
+      "rows_used": 150754,
+      "sha256": "2debfaee630bc2e0a5eb67776f849506682aa150f99c64e114f622aa3736e3b9"
+    },
+    {
+      "subject": 505,
+      "split": "train",
+      "rows_read": 87006,
+      "rows_used": 87002,
+      "sha256": "5239b139b672c870d6e8ad228a3396f27a66bbb579a0220f5f2848c91c7b0f5e"
+    },
+    {
+      "subject": 506,
+      "split": "train",
+      "rows_read": 122714,
+      "rows_used": 122710,
+      "sha256": "fadd14dc3cbe0b80dcd3c19ab903d37f039072d8e665805dc83d321862829a47"
+    },
+    {
+      "subject": 507,
+      "split": "train",
+      "rows_read": 120125,
+      "rows_used": 120121,
+      "sha256": "a78636bdad60827cdc15aa7f44824ba3c0b0dbf2ee466d97b742458b931d453d"
+    },
+    {
+      "subject": 508,
+      "split": "test",
+      "rows_read": 130494,
+      "rows_used": 130490,
+      "sha256": "44b2b72ce4a0bcce3e2ccea487cc1efe9c7db925e7d8d5e14a76df98f63119c7"
+    },
+    {
+      "subject": 509,
+      "split": "train",
+      "rows_read": 121763,
+      "rows_used": 121759,
+      "sha256": "924fada050e0f8d0f807007d6ac5d4edd039ade7752ecb71623e1a53ee96e47c"
+    },
+    {
+      "subject": 510,
+      "split": "train",
+      "rows_read": 122061,
+      "rows_used": 122057,
+      "sha256": "d0856b9e2a2dec1a2cc33311c77c6f1d6c068630da06c836bb5b838241aaf4cc"
+    },
+    {
+      "subject": 511,
+      "split": "train",
+      "rows_read": 128063,
+      "rows_used": 128059,
+      "sha256": "02a1022d25126e138e28bc3e7c41ed1c8b40fc5228fb66b19a4180409d58928d"
+    },
+    {
+      "subject": 512,
+      "split": "test",
+      "rows_read": 119310,
+      "rows_used": 119306,
+      "sha256": "8ab8b529922f50f3e365da8fd45285190b17fb34786cc18f6601c920c3e9b5bb"
+    },
+    {
+      "subject": 513,
+      "split": "train",
+      "rows_read": 123599,
+      "rows_used": 123595,
+      "sha256": "97e0adaf1de176de3f77b4a06ed480cda5cc8696eac6d7eea64ca0f020b8e66d"
+    },
+    {
+      "subject": 514,
+      "split": "train",
+      "rows_read": 101510,
+      "rows_used": 101506,
+      "sha256": "929726be7fe09c82b41d1f1d11c4731268410d4e78f69f1fc279e80aef36d0e6"
+    },
+    {
+      "subject": 515,
+      "split": "train",
+      "rows_read": 153517,
+      "rows_used": 153513,
+      "sha256": "ea10d71a635120659273fee0acebd7923c1ce81e6d1b3f9656832927d2c1005e"
+    },
+    {
+      "subject": 516,
+      "split": "test",
+      "rows_read": 138278,
+      "rows_used": 138274,
+      "sha256": "0485aa3afcfe6cfabc958606475929606374335ffb7eb377e2958821e202e3b1"
+    },
+    {
+      "subject": 517,
+      "split": "train",
+      "rows_read": 147045,
+      "rows_used": 147041,
+      "sha256": "eab1cc0bc35effeb6f7562a6d2f71484b646d8798c3d03e91678af0e71f6f894"
+    },
+    {
+      "subject": 518,
+      "split": "train",
+      "rows_read": 141714,
+      "rows_used": 141710,
+      "sha256": "00fb3ee561cee5399e4f6f705963598068a839eb68eb40579d2b2ae253f0670b"
+    }
+  ],
+  "train_rows": 1720701,
+  "test_rows": 538824,
+  "classes": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "features": [
+    "back_x",
+    "back_y",
+    "back_z",
+    "thigh_x",
+    "thigh_y",
+    "thigh_z"
+  ],
+  "student_hidden": [
+    64,
+    32
+  ],
+  "epochs_completed": 12,
+  "inference_batch_rows": 4096,
+  "int8_matmul_layers": 3,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "fp32_export_max_abs_error": 0.0,
+  "teacher": {
+    "accuracy": 0.7734492153281962,
+    "macro_f1": 0.47716435530188217,
+    "confusion_matrix": [
+      [
+        257988,
+        2031,
+        159,
+        112,
+        2737,
+        50,
+        1
+      ],
+      [
+        18135,
+        708,
+        7,
+        9,
+        1292,
+        1,
+        0
+      ],
+      [
+        2177,
+        84,
+        97,
+        6,
+        21,
+        17,
+        0
+      ],
+      [
+        2079,
+        23,
+        58,
+        36,
+        38,
+        2,
+        4
+      ],
+      [
+        87037,
+        3639,
+        13,
+        13,
+        33395,
+        3,
+        2
+      ],
+      [
+        78,
+        0,
+        0,
+        0,
+        0,
+        90882,
+        2118
+      ],
+      [
+        11,
+        1,
+        1,
+        0,
+        0,
+        112,
+        33647
+      ]
+    ],
+    "accuracy_by_subject": {
+      "504": 0.8225320721174895,
+      "508": 0.8560962525864051,
+      "512": 0.652800362094111,
+      "516": 0.746040470370424
+    }
+  },
+  "student_fp32": {
+    "accuracy": 0.7909836978308316,
+    "macro_f1": 0.47251419556621627,
+    "confusion_matrix": [
+      [
+        255797,
+        0,
+        0,
+        0,
+        7084,
+        197,
+        0
+      ],
+      [
+        17220,
+        0,
+        0,
+        0,
+        2930,
+        2,
+        0
+      ],
+      [
+        2160,
+        0,
+        0,
+        0,
+        133,
+        109,
+        0
+      ],
+      [
+        2038,
+        0,
+        0,
+        0,
+        193,
+        9,
+        0
+      ],
+      [
+        80039,
+        0,
+        0,
+        0,
+        44055,
+        6,
+        2
+      ],
+      [
+        81,
+        0,
+        0,
+        0,
+        1,
+        92996,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        8,
+        401,
+        33353
+      ]
+    ],
+    "accuracy_by_subject": {
+      "504": 0.8324090903060616,
+      "508": 0.8858150049812246,
+      "512": 0.6598746081504702,
+      "516": 0.7694505113036435
+    }
+  },
+  "student_int8": {
+    "accuracy": 0.7945358781346042,
+    "macro_f1": 0.47467682077490575,
+    "confusion_matrix": [
+      [
+        255737,
+        0,
+        0,
+        0,
+        7162,
+        179,
+        0
+      ],
+      [
+        17248,
+        0,
+        0,
+        0,
+        2903,
+        1,
+        0
+      ],
+      [
+        2183,
+        0,
+        0,
+        0,
+        114,
+        105,
+        0
+      ],
+      [
+        2063,
+        0,
+        0,
+        0,
+        172,
+        5,
+        0
+      ],
+      [
+        77700,
+        0,
+        0,
+        0,
+        46394,
+        6,
+        2
+      ],
+      [
+        86,
+        0,
+        0,
+        0,
+        1,
+        92991,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        13,
+        756,
+        32993
+      ]
+    ],
+    "accuracy_by_subject": {
+      "504": 0.8434535733711875,
+      "508": 0.8876235726875623,
+      "512": 0.6582485373744824,
+      "516": 0.7709475389444147
+    }
+  },
+  "int8_teacher_agreement": 0.9169209240865291,
+  "int8_fp32_agreement": 0.9806114798153015,
+  "model_bytes": {
+    "teacher.joblib": 97808705,
+    "student_fp32.onnx": 11605,
+    "student_int8.onnx": 6101
+  },
+  "teacher_to_int8_size_ratio": 16031.585805605639,
+  "split": "participants"
+}
